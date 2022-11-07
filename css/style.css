@@ -29,6 +29,7 @@ img {
 	--color-primary:#343a40;
 	--color-primary-transparent:#343A40BB;
 	--color-secondary:#505962;
+	--body-bg:#252525;
 
 	/*Colores de degradado para lineas o contornos*/
 	--color-A:#0747a6; 
@@ -51,14 +52,47 @@ img {
     --note-font-size:1.2rem;
 	--normal-font-size: 1.1rem;
 	--small-font-size: 0.92rem;
+
+	/*Separación*/
+	--m-b:20px;
 }
 
 /*--->Contenido del sitio<---*/
 #body {
-	padding-top: 10px;
-	background-color:#252525;
+	background-color:var(--body-bg);
 	font-family: var(--body-font);
 }
+
+#header {
+	margin-bottom: var(--m-b);
+}
+
+/*-Nav-*/
+.nav {
+	background-color:greenyellow;
+	color:var(--color-text-item);
+	font-family: var(--heading-font);
+	font-size: var(--h2-size);
+	height: 70px;
+}
+
+.nav_list {
+	display: flex;
+	height: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
+}
+
+.nav_item {
+	background-color: red;
+}
+
+.nav_item-link {
+	text-decoration: none;
+}
+
+
 .section {
 	width: 95%;
 	margin:0 auto;
@@ -68,7 +102,7 @@ img {
 	width: 90%;
 	margin:0 auto;
 	padding:5px;
-	margin-bottom: 20px;
+	margin-bottom: var(--m-b);
 }
 
 /*slider*/
@@ -175,7 +209,7 @@ img {
 /*--->Footer<---*/
 #footer {
 	height: 100px;
-	background: linear-gradient(0deg, #2a3b47 0%,#252525 90%);
+	background: linear-gradient(0deg, var(--color-title) 0%,var(--body-bg) 90%);
 	display: flex;
 	color:var(--color-text-item);
 	justify-content: center;
