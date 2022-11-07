@@ -9,38 +9,39 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Desarrollo web</title>
 </head>
-<body>
+<body id="body">
     <!--Contenido del sitio-->
-    <section>
+    <section class="section">
         <div class="container">
             <!--Slider o imagen de presentación-->
             <div class="slide">
-                <img src="assets/slider/img_4.webp" alt="Imagen de inicio" class="slide_img">
-                <span class="slide_text">Esto es un slider</span>
-                <span class="slide_icon">o</span>
+                <div class="slide_img">
+                    <span class="slide_text">Esto es un slider</span>
+                    <span class="slide_icon"></span>
+                </div>
             </div>
         </div>
         <div class="container container--card">
             <!--Card o cartas de presentación-->
             <div class="card">
-                <div class="card_img">
-                    <img src="assets/cards/icon_1.png" alt="imagen del card">
+                <div class="card_content">
+                    <img class="card_img" src="assets/cards/icon_1.png" alt="imagen del card">
                     <p class="card_title">Titulo del card</p>
                     <p class="card_text">texto del card</p>
                     <a href="#" class="btn btn--card">Botón</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card_img">
-                    <img src="/assets/cards/icon_2.webp" alt="imagen del card">
+                <div class="card_content">
+                    <img class="card_img" src="assets/cards/icon_2.webp" alt="imagen del card">
                     <p class="card_title">Titulo del card</p>
-                    <p class="card_text">texto del card</p>
+                    <p class="card_text">Lorem ipsum dolor sit amet consectetur, adipisicing</p>
                     <a href="#" class="btn btn--card">Botón</a>
                 </div>
             </div>
             <div class="card">
-                <div class="card_img">
-                    <img src="/assets/cards/icon_3.webp" alt="imagen del card">
+                <div class="card_content">
+                    <img class="card_img" src="assets/cards/icon_3.webp" alt="imagen del card">
                     <p class="card_title">Titulo del card</p>
                     <p class="card_text">texto del card</p>
                     <a href="#" class="btn btn--card">Botón</a>
@@ -48,13 +49,13 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="section">
         <article>
         </article>
     </section>
     <!--Footer o pie de pagina-->
-    <footer>
-        <span>by JR Chávez</span>
+    <footer id="footer">
+        <a class="footer_text"href="#">DuzZeus</a>
     </footer>
     <!--Scripts-->
     <script src="js/main.js"></script>
